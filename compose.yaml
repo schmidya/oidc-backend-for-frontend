@@ -1,0 +1,9 @@
+services:
+  auth:
+    image: quay.io/keycloak/keycloak
+    ports:
+      - 8181:8080
+    command: start-dev
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
